@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JS + CSS Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🚀 Interactive Web Page with JS & CSS</h1>
+    <button id="themeToggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Section -->
+    <section>
+      <h2>🎮 Click Counter</h2>
+      <p>Clicks: <span id="counterValue">0</span></p>
+      <button id="counterBtn">Click Me!</button>
+    </section>
+
+    <!-- Animated Box Section -->
+    <section>
+      <h2>🎨 Animate the Box</h2>
+      <div id="animatedBox"></div>
+      <button id="animateBtn">Start Animation</button>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>📋 Register</h2>
+      <form id="registerForm" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name">
+          <span class="error" id="nameError"></span>
+        </label>
+        <br><br>
+        <label>
+          Email:
+          <input type="email" id="email">
+          <span class="error" id="emailError"></span>
+        </label>
+        <br><br>
+        <label>
+          Password:
+          <input type="password" id="password">
+          <span class="error" id="passwordError"></span>
+        </label>
+        <br><br>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formSuccess" class="success"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
